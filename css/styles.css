@@ -151,7 +151,7 @@ address {
 .hero-btn:hover {
   background-color: var(--ocean);
 }
-/** ===========ABOUT US=========== --> */
+/** ===========ABOUT =========== --> */
 .about-list {
   flex-wrap: nowrap;
 }
@@ -166,6 +166,20 @@ address {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+.about-icon-cont {
+  display: flex;
+  justify-content: center;
+  background-color: var(--cold);
+  width: 264px;
+  height: 112px;
+  padding: 24px 0;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.about-icon {
+  width: 64px;
+  height: 64px;
 }
 .about-info {
   font-weight: 500;
@@ -202,7 +216,6 @@ address {
 /** =============OUR TEAM============== --> */
 .team-section {
   background-color: var(--cold);
-  /* padding: 120px 156px; */
 }
 .team {
   font-size: 36px;
@@ -252,6 +265,38 @@ address {
   width: 16px;
   height: 16px;
 }
+/** ============= CUSROMERS ============ */
+.customers-title {
+  margin-bottom: 72px;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--navy-blue);
+}
+.customers-list {
+  display: flex;
+  justify-content: center;
+  margin-right: ;
+}
+.customers-item {
+  margin-right: 24px;
+}
+.customers-icon-link {
+  display: flex;
+  justify-content: center;
+  padding: 16px 32px;
+  width: 168px;
+  height: 88px;
+  border: 1px solid var(--light-slate);
+  border-radius: 4px;
+}
+.customers-icon {
+  width: 104px;
+  height: 56px;
+}
+
 /**-- ================FOOTER=============== --> */
 .footer-text {
   line-height: 1.5;
@@ -279,6 +324,31 @@ address {
 }
 .logo-studio-footer {
   color: var(--cold);
+}
+.soc-media-list {
+  display: flex;
+}
+.soc-media-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+.soc-media-title {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+  color: var(--white);
+}
+.soc-media-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-color: var(--cold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1); 
 }
 /*!```````````````P O R T F O L I O```````````````` */
 .menu-gallery {

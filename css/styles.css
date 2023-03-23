@@ -52,6 +52,9 @@ address {
   gap: 24px;
   flex-wrap: wrap;
 }
+.section {
+  padding: 120px 0;
+}
 /** !============HEADER============ */
 .header {
   padding: 24px 0;
@@ -94,6 +97,33 @@ address {
 .header-contact-item {
   margin-right: 40px;
 }
+.header-item-contacts:hover::after {
+  display: block;
+  width: 84px;
+  height: 4px;
+  content: '';
+  background-color: var(--ocean);
+  border-radius: 2px;
+  margin-top: 20px;
+}
+.header-item-portfolio:hover::after {
+  display: block;
+  width: 81px;
+  height: 4px;
+  content: '';
+  background-color: var(--ocean);
+  border-radius: 2px;
+  margin-top: 20px;
+}
+.header-item-studio:hover::after {
+  display: block;
+  width: 59px;
+  height: 4px;
+  content: '';
+  background-color: var(--ocean);
+  border-radius: 2px;
+  margin-top: 20px;
+}
 .header-tel {
   color: var(--slate);
 }
@@ -103,9 +133,7 @@ address {
 }
 .header-conteiner {
   display: flex;
-}
-.section {
-  padding: 120px 0;
+  align-items: center;
 }
 /**  =============HERO============ --> */
 
@@ -123,6 +151,7 @@ address {
   padding-top: 188px;
   padding-bottom: 188px;
   text-align: center;
+  max-width: 1440рх;
 }
 .hero-main {
   font-size: 56px;
@@ -261,9 +290,19 @@ address {
   align-items: center;
   justify-content: center;
 }
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: var(--ocean);
+}
 .team-soc-icons {
   width: 16px;
   height: 16px;
+  fill: var(--cold);
+}
+.team-wrap {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 /** ============= CUSROMERS ============ */
 .customers-title {
@@ -278,7 +317,6 @@ address {
 .customers-list {
   display: flex;
   justify-content: center;
-  margin-right: ;
 }
 .customers-item {
   margin-right: 24px;
@@ -295,12 +333,32 @@ address {
 .customers-icon {
   width: 104px;
   height: 56px;
+  fill: var(--light-slate);
+}
+.customers-icon:hover,
+.customers-icon:focus,
+.customers-icon-link:hover,
+.customers-icon-link:focus {
+  fill: var(--ocean);
+  border-color: var(--ocean);
 }
 
 /**-- ================FOOTER=============== --> */
-.web-studio-cont {
+.footer {
+  background-color: var(--navy-blue);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  /* padding: 156px; */
+}
+.footer-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 1188px;
-  text-align:left;
+  padding-left: 156px;
+}
+.web-studio-cont {
+  text-align: left;
   /* padding-left: 156px; */
   margin-right: 120px;
 }
@@ -312,15 +370,6 @@ address {
   max-width: 264px;
   height: 72px;
   margin-top: 16px;
-}
-.footer {
-  background-color: var(--navy-blue);
-  padding-top: 100px;
-  padding-bottom: 100px;
-  display: flex;
-  justify-content:space-evenly;
-  /* padding: 156px; */
-
 }
 .logo-web-footer {
   font-family: 'Raleway', sans-serif;
@@ -340,10 +389,7 @@ address {
   display: flex;
   gap: 16px;
 }
-.soc-media-icon {
-  width: 24px;
-  height: 24px;
-}
+
 .soc-media-title {
   font-size: 16px;
   line-height: 24px;
@@ -354,6 +400,11 @@ address {
 .soc-media-item {
   padding: 8px;
 }
+.soc-media-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--cold);
+}
 .soc-media-link {
   display: flex;
   align-items: center;
@@ -363,7 +414,10 @@ address {
   height: 40px;
   background-color: var(--cold);
   background-color: rgba(255, 255, 255, 0.1);
-   
+}
+.soc-media-link:hover,
+.soc-media-link:focus {
+  background-color: var(--green);
 }
 /*!```````````````P O R T F O L I O```````````````` */
 .menu-gallery {
@@ -389,6 +443,7 @@ address {
   background: #404bbf;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 .gallery-items {
   padding-bottom: 120px;
@@ -400,6 +455,12 @@ address {
 }
 .gallery-item {
   width: calc((100% - 48) / 3);
+}
+.gallery-item:hover,
+.about-item:focus {
+  border: 1px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .gallery-title {
   font-weight: 500;

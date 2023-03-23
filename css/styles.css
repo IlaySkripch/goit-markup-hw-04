@@ -151,7 +151,7 @@ address {
   padding-top: 188px;
   padding-bottom: 188px;
   text-align: center;
-  max-width: 1440рх;
+  max-width: 1440px;
 }
 .hero-main {
   font-size: 56px;
@@ -199,10 +199,10 @@ address {
 .about-icon-cont {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: var(--cold);
-  width: 264px;
   height: 112px;
-  padding: 24px 0;
+  padding: 10px 0;
   border-radius: 4px;
   margin-bottom: 8px;
 }
@@ -224,14 +224,14 @@ address {
   color: var(--slate);
 }
 .about-item {
-  flex-basis: calc((100% - 72) / 4);
+  flex-basis: calc((100% - 72px) / 4);
 }
 /** ==========WHAT ARE WE DOING======== --> */
 .examples {
   padding-top: 0;
 }
 .examples-items {
-  flex-basis: calc((100% - 2 * 24) / 3);
+  flex-basis: calc((100% - 2 * 24px) / 3);
 }
 .examples-title {
   font-size: 36px;
@@ -256,7 +256,7 @@ address {
   margin-bottom: 72px;
 }
 .team-item {
-  flex-basis: calc((100% - 3 * 24) / 4);
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 .team-name {
   font-weight: 500;
@@ -317,29 +317,31 @@ address {
 .customers-list {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 .customers-item {
-  margin-right: 24px;
+  flex-basis: calc((100% - 5 * 24px) / 6);
 }
 .customers-icon-link {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 16px 32px;
-  width: 168px;
   height: 88px;
   border: 1px solid var(--light-slate);
   border-radius: 4px;
+  color: var(--light-slate);
 }
 .customers-icon {
   width: 104px;
   height: 56px;
-  fill: var(--light-slate);
+  fill: currentColor;
 }
-.customers-icon:hover,
-.customers-icon:focus,
 .customers-icon-link:hover,
 .customers-icon-link:focus {
-  fill: var(--ocean);
+  color: var(--ocean);
   border-color: var(--ocean);
 }
 
@@ -348,7 +350,6 @@ address {
   background-color: var(--navy-blue);
   padding-top: 100px;
   padding-bottom: 100px;
-  /* padding: 156px; */
 }
 .footer-cont {
   display: flex;
@@ -359,7 +360,6 @@ address {
 }
 .web-studio-cont {
   text-align: left;
-  /* padding-left: 156px; */
   margin-right: 120px;
 }
 .footer-text {
@@ -382,8 +382,6 @@ address {
 }
 .logo-studio-footer {
   color: var(--cold);
-}
-.social-media-footer {
 }
 .soc-media-list {
   display: flex;
@@ -454,7 +452,7 @@ address {
   margin-top: 72px;
 }
 .gallery-item {
-  width: calc((100% - 48) / 3);
+  width: calc((100% - 48px) / 3);
 }
 .gallery-item:hover,
 .about-item:focus {
